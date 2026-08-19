@@ -1,0 +1,40 @@
+SELECT DISTINCT_ Selecona todos os itens repetidos e trás apenas um, bom pra ver quantidade reais em listas repetidas
+
+LIMIT X_Trás a quntidade de itens que vc pedir em um select 
+(X=Numero)
+
+ORDER BY_ Vai ordenar a tabela pela ordem que vc decidir
+EX = ORDER BY nome DESC/ASC (ascendente ou descendente) *default é ascendente*
+
+AND e OR_ Padrão igua nas linguagens, bom pra usar com select from, tipo:
+            Select *  from endereço
+            where estado = sp
+            or = cidade = "taboão"
+
+IN_ Vc filtra tipo, todos os bairros IN "embu" ou IN taboão
+
+NOT IN_ O oposto do IN, mostra tudo q não esteja em:
+
+LIKE_ Se eu quiser buscar em uma tabela tudo q começa com uma letra eu uso 'letra%', se termina, vc usa '%letra%'
+
+NOT LIKE_ Nesse caso, mostra todos que não usa a tal letra
+
+lIKE 'M_R__S%'_ Vai puxar todos os nomes que tem essas letras nessas devidas posições 
+
+BETWEEN_ Literal do inglês cara, tipo: WHERE estoque NOT BETWEEN 10 AND 100;
+
+NOT BETWEEN_ Literalmente o oposto do BETWEEN
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=FUNÇÕES  AGREGADAS =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+SUM()_ soma de tudo
+
+AVG()_ média
+
+MIN()_ mínimo
+
+MAX()_máximo
+
+EX SINTAXE =  SELECT AVG(estoque) AS media_estoque
+              FROM produto;
+
