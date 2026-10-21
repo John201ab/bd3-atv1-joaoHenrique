@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEB APP LIBRI - FIREBASE: FIRESTORE</title>
+
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <h1>WEB APP LIBRI - FIREBASE: FIRESTORE</h1>
+
+        <div class="content">
+
+            <!-- FORMULÁRIO DE CADASTRO -->
+            <form id="add-book-form">
+
+                <input type="text" name="titulo" id="titulo" placeholder="Digite o titulo do livro aqui">
+                <input type="text" name="autor" id="autor" placeholder="Digite o nome do autor aqui">
+
+                <button>CADASTRAR</button>
+
+            </form>
+
+            <!-- LISTAGEM DE LIVROS -->
+            <ul id="book-list"></ul>
+
+        </div>
+        
+    </body>
+
+    <!-- IMPORT DO SDK DO FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+
+    <!-- IMPORT DO SDK DO FIRESTORE -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+
+    <script>
+
+        /**** CONEXÃO COM O FIREBASE  ****/
+
+        /* CREDENCIAIS DE ACESSO */
+        const firebaseConfig = {
+
+        apiKey: "AIzaSyD5QMmeUzV0DCVS1g0TAdvAvBuY_fTb2Kk",
+
+        authDomain: "app-bd-aula-joao.firebaseapp.com",
+
+        projectId: "app-bd-aula-joao",
+
+        storageBucket: "app-bd-aula-joao.firebasestorage.app",
+
+        messagingSenderId: "970604685651",
+
+        appId: "1:970604685651:web:bbc98feededa4172b4d9a6",
+
+        measurementId: "G-1JM6RY3Z4Q"
+
+        };
+
+
+        /* INICIALIZA O FIRESTORE NO FRONT-END */
+        firebase.initializeApp(firebaseConfig);
+
+        /* CONEXÃO COM O FIRESTORE */
+        const db = firebase.firestore();
+
+        //TESTE DE CONEXÃO:
+        console.log(db);
+
+
+    </script>
+
+    <script>
+
+        /* DADOS DE CREDENCIAS DE ACESSO AO FIREBASE */
+        
+
+    </script>
+
+    <script src="app.js"></script>
+
+</html>
